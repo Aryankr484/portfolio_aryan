@@ -172,7 +172,11 @@
             width: 150px;
             font-size: 9px;
         }
-        
+
+        footer {
+            background-color: #0e0e1a;
+        }
+
         .footer {
             display: flex;
             margin: 23px 122px;
@@ -190,8 +194,24 @@
             color: grey;
             padding: 12px 0;
         }
-        
-        </style>
+        ul li ul.dropdown li{
+            display: block;
+        }
+        ul li ul.dropdown{
+            width: 15%;
+            background:  rgb(40, 40, 150);
+            position: absolute;
+            z-index: 999;
+            display: none;
+        }
+        ul li a:hover{
+            background: rgb(40, 40, 150);
+        }
+        ul li:hover ul.dropdown{
+            display: block;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -204,7 +224,18 @@
                 <li><a href="/">About</a></li>
                 <li><a href="/">Contact</a></li>
                 <li><a href="/">Services</a></li>
-                <li><a href="https://aryankr484.github.io/sliding-login/">Projects</a>
+                <li><a href="#">Projects</a>
+                    <ul class="dropdown">
+                        <li><a href="">Slider-login</a></li>
+                        <li><a href="#">calculator</a></li>
+                        <li><a href="#">BMI calculator</a></li>
+                        <li><a href="#">Analog Clock </a></li>
+                        <li><a href="#">AI Image Generator</a></li>
+                        <li><a href="#">Text to Speech </a></li>
+                        <li><a href="#"> Mousemove parallax effects</a></li>
+                        <li><a href="#">Pay Role Management</a></li>
+                    </ul>
+                </li>
                 <li><a href="/">Contact Me</a></li>
             </ul>
         </nav>
